@@ -1,0 +1,13 @@
+[Unit]
+Description="Wireguard Auto-Random Connection"
+After=network.target
+StartLimitIntervalSec=5
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart="/usr/local/bin/wireguard.sh"
+ExecStop=/usr/bin/wg-quick down /tmp/wg_current.conf
+
+[Install]
+WantedBy=multi-user.target
