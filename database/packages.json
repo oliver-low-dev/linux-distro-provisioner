@@ -1,0 +1,103 @@
+{
+  "name": "Packages",
+  "distros": {
+    "debian": {
+      "core": [
+        "core",
+          "apt-transport-https",
+	  "jq"
+      ],
+      "network": {
+	"dns": [
+          "systemd-resolved",,
+	  "dns-utils"
+	],
+	"vpn": [
+	  "openvpn",
+	  "wireguard"
+	],
+	"tor": [
+	  "tor",
+	  "proxychains",
+	  "proxychains4"
+	]
+      },
+      "graphical": {
+	"gnome": [
+	  "gdm3",
+	  "gnome-shell",
+	  "gnome-terminal",
+	  "nautilus",
+	  "gnome-disk-utility"
+	],
+	"xfce": [
+	  "lightdm",
+	  "lightdm-gtk-greeter",
+	  "xfce4",
+	  "xfce4-terminal"
+	]
+      },
+      "graphical-utils": {
+	"browsers": [
+	  "firefox-esr",
+	  "chromium",
+	  "epiphany-browser",
+	  "librewolf",
+	  "chrome"
+	],
+	"general": [
+	  "kepassxc",
+	  "evince",
+	  "mpv"
+	]
+      },
+      "utils": {
+	"neovim",
+	"htop"
+      },
+      "audio": {
+	"pipewire": [
+	  "pipewire",
+	  "pipewire-pulse",
+	  "wireplumber"
+	],
+	"pulseaudio": [
+	  "pulseaudio"
+	]
+      },
+      "virtualization": {
+	"qemu": {
+	  "x86_64": [
+	    "qemu-system-x86"
+	  ]
+	},
+	"libvirt": {
+	    "libvirt0"
+	},
+	"virt-manager": {
+	  "virt-manager"
+	}
+      },
+      "development": {
+	"compilers": [
+	  "nasm",
+	  "gcc",
+	  "g++",
+	  "arduino",
+	  "openjdk-21-jdk",
+	  "python3",
+	  "python3-pip",
+	  "python3-venv"
+	]
+      }
+    },
+
+    "ubuntu": {
+      "core": [
+	"core",
+	"apt-transport-https",
+	"jq"
+      ]
+    }
+  }
+}
