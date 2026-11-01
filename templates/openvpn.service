@@ -1,0 +1,10 @@
+[Unit]
+Description="OpenVPN Auto-Random Connection"
+After=network.target
+StartLimitIntervalSec=5
+
+[Service]
+ExecStart="/usr/local/bin/openvpn.sh"
+
+[Install]
+WantedBy=multi-user.target
